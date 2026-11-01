@@ -16,12 +16,13 @@ streamlit run app.py
 ## GitHub → Streamlit Community Cloud
 1. GitHub дээр шинэ repository үүсгээд энэ хавтасны бүх файлыг push хийнэ:
    ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/<нэр>/<repo>.git
-   git push -u origin main
+cd data-analysis-course
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/<нэр>/data-sci.git
+git push -u origin main --force
    ```
 2. https://share.streamlit.io руу GitHub-аараа нэвтэрнэ.
 3. **Create app** → repository, branch `main`, Main file path: `app.py` → **Deploy**.
